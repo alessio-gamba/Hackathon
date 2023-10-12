@@ -44,8 +44,3 @@ with open(save_path, 'w', encoding='utf-8') as f:
         input_text = ' '.join([tokenizer.convert_ids_to_tokens(token_id) for token_id in input_seq if token_id != tokenizer.pad_token_id])
         output_text = ' '.join([tokenizer.convert_ids_to_tokens(token_id) for token_id in output_seq if token_id != tokenizer.pad_token_id])
         f.write(f"Input: {input_text}\nOutput: {output_text}\n\n")
-
-with open('C:/Users/Losti/Desktop/preprocessed_data.txt', 'r', encoding='utf-8') as f:
-    loaded_data = f.read()
-print(loaded_data)
-
