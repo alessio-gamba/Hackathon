@@ -14,7 +14,7 @@ model = GPT2LMHeadModel.from_pretrained(model_name)
 import pandas as pd
 from transformers import TextDataset, DataCollatorForLanguageModeling
 
-df = pd.read_csv('C:/Users/Losti/Desktop/datagen.csv', encoding='latin1')
+df = pd.read_csv('C:/Users/Losti/Desktop/Dataset01.csv', encoding='latin1')
 
 questions = df['questions']
 inputs = df['inputs']
